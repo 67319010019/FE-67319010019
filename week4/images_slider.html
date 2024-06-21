@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav-arrow {
+            display: inline-block;
+            padding: 15px;
+            background-color: rgb(219, 19, 29);
+        }
+
+        .btn-color {
+            background-color: mediumspringgreen;
+            border-radius: 20px;
+            padding: 10px;
+            font-size: large;
+        }
+    </style>
+    <script>
+        //var number1 = 10;
+        let count_p = 0;
+        //const number3 = 10;
+        const name_p = ["images/1.jpg", "images/2.jpg", "images/3.jpg", "images/4.jpg"];
+        console.log(name_p[2]);
+        function forwardPic() {
+            //name_p.length;
+            if (count_p < name_p.length-1) {
+                count_p = count_p + 1;
+            } else {
+                count_p = 0;
+            }
+
+            console.log("count_p = ", count_p);
+            console.log("name_p = ", name_p[count_p]);
+            console.log(name_p.length);
+
+            document.getElementById("slider").src=name_p[count_p];
+        }
+        setInterval(forwardPic,100);
+    </script>
+</head>
+
+<body>
+    <div class="nav-arrow">
+        <button class="btn-color">backward</button>
+        <button class="btn-color" onclick="forwardPic()">forward</button>
+    </div>
+
+    <img id="slider" height="350px" width="350px" src="images/1.jpg" alt="">
+ 
+
+</body>
+
+</html>
