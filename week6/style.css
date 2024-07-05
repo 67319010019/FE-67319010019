@@ -1,0 +1,46 @@
+.form-1{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: aquamarine;
+    width: 300px;
+    height: 150px;
+    
+   
+}
+.form-2{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(219, 52, 150);
+    width: 300px;
+    height: 150px;
+    padding: 10px;
+  
+}
+.form-3{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(186, 52, 219);
+    width: 300px;
+    height:fit-content ;
+    padding: 10px;
+    
+}
+input{
+    
+    color: red;
+    font-size: 20px;
+    border-radius: 8px;
+    border-style: dotted;
+}   
+.hide{
+    display: none;
+}
+.unhide{
+    
+}
